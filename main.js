@@ -33,6 +33,7 @@ function updateCoffees(e) {
     console.log(div);
 }
 
+
 // //function search for coffee names
 // function updateCoffeeNames(e){
 //     e.preventDefault();

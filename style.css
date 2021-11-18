@@ -14,3 +14,37 @@ form {
     border: black 1px solid;
     display: block;
 }
+
+.btn btn-primary btn-lg btn-block{
+    background-color: blue;
+    color: blue;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: right;
+    /*align-content: center;*/
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.add-coffee-title{
+    display: flex;
+    justify-content: center;
+
+}
+    /*50% width to get the body to the right*/
+main {
+    width: 50%;
+    /*padding: 0em;*/
+    /*margin-top: 0em;*/
+    /*margin-bottom: 0em;*/
+    display: flex;
+    float: right;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
