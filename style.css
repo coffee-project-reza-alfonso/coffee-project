@@ -10,14 +10,25 @@ form {
     top: 150px;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.5);
-
 }
+
+
 #formDiv {
     border: 1px palegreen solid;
     height: auto;
     width: 40%;
     float: right;
+    margin-bottom: 20px;
+
 }
+#addCoffeeDiv{
+    border: 1px brown solid;
+    height: auto;
+    width: 40%;
+    float: right;
+    clear: right;
+}
+
 small {
     opacity: .42;
     text-align: start;
