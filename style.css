@@ -27,6 +27,14 @@ form {
     width: 40%;
     float: right;
     clear: right;
+    margin-bottom: 20px;
+}
+#orderFormDiv {
+    border: 1px brown solid;
+    height: auto;
+    width: 40%;
+    float: right;
+    clear: right;
 }
 
 small {

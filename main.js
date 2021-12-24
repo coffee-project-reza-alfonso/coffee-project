@@ -19,6 +19,56 @@ function renderCoffees(coffees) {
     return html;
 }
 
+// order form - option selection
+$("#orderCoffee").click(function(){
+    coffees.forEach(function(element){
+        console.log(element.name);
+        $("#orderCoffee").append($('<option></option>').val(element.name).html(element.name));
+    })
+})
+
+// order form processing
+$("#orderCoffeeBtn").click(function(){
+    let coffeeFlavor = $("#orderCoffee").val();
+    let size = $("#coffeeSize").val();
+    let taxRate = .08;
+    console.log(coffeeFlavor);
+    console.log(size);
+    // prices, consider creating switch statement
+    let price;
+    let small = 1.99;
+    let medium = 2.99;
+    let large = 3.99;
+    let jumbo = 4.99;
+    switch (size){
+        case "small":
+            price = small +(small * taxRate);
+            console.log(price);
+            return price;
+            break;
+        case "medium":
+            price = medium + (medium * taxRate);
+            console.log(price);
+            return price;
+            break;
+        case "large":
+            price = large + (large * taxRate);
+            console.log(price);
+            return price;
+        case "jumbo":
+            price = jumbo + (jumbo * taxRate);
+            console.log(price);
+            return price;
+            break;
+        default:
+            console.log("error");
+            break;
+    }
+
+
+
+})
+
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -93,6 +143,9 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+
+
+
 
 var coffeesDiv = document.querySelector('#coffees'); //updated var name
 // var submitButton = document.querySelector('#submit');
