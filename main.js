@@ -43,28 +43,28 @@ $("#orderCoffeeBtn").click(function(){
     switch (size){
         case "small":
             price = small +(small * taxRate);
-            console.log(price);
-            return price;
+            console.log(price.toFixed(2));
+            $("#orderDiv").append(`<h4>Your ${size} ${coffeeFlavor} will come out to $ ${price.toFixed(2)} total.</h4>`);
             break;
         case "medium":
             price = medium + (medium * taxRate);
             console.log(price);
-            return price;
+            $("#orderDiv").append(`<h4>Your ${size} ${coffeeFlavor} will come out to $ ${price.toFixed(2)} total.</h4>`);
             break;
         case "large":
             price = large + (large * taxRate);
             console.log(price);
-            return price;
+            $("#orderDiv").append(`<h4>Your ${size} ${coffeeFlavor} will come out to $ ${price.toFixed(2)} total.</h4>`);
+            break;
         case "jumbo":
             price = jumbo + (jumbo * taxRate);
             console.log(price);
-            return price;
+            $("#orderDiv").append(`<h4>Your ${size} ${coffeeFlavor} will come out to $ ${price.toFixed(2)} total.</h4>`);
             break;
         default:
             console.log("error");
             break;
     }
-
 
 
 })
